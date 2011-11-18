@@ -17,7 +17,12 @@ int main() {
       cout << "'g' és posterior o igual a 'h'" << endl;
    }
 
-   Hora r = h.resta(g);
+   // Diferencia entre hores (sempre positiva)
+   Hora r = h.diferencia(g);
+   r.escriu(cout);
+   cout << endl;
+
+   r = g.diferencia(h);
    r.escriu(cout);
    cout << endl;
 }
