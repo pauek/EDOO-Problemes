@@ -6,7 +6,7 @@ Data::Data() {
    time_t raw;
    time(&raw);
    struct tm *info;
-   timeinfo = localtime(&raw);
+   info = localtime(&raw);
    _dia = info->tm_mday;
    _mes = info->tm_mon + 1;
    _any = info->tm_year + 1900;
@@ -38,7 +38,7 @@ int dies_mes(int mes, int any) {
    if (de_traspas(any) && mes == 2) {
       return 29;
    } else {
-      return taula_dies[mes];
+      return taula_dies_mes[mes];
    }
 }
 
@@ -57,6 +57,7 @@ void Data::incrementa() {
 void Data::incrementa(int dies) {
    while (dies > 0) {
       incrementa();
+      dies--;
    }
 }
 
