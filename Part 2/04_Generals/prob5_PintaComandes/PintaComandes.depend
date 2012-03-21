@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1323292570 source:/home/pauek/UPC/Assignatures/EDOO/Problemes/Generals/PintaComandes/Imatge.cpp
+	"Imatge.h"
+	<fstream>
+	<sstream>
+	<iostream>
+	<cstdlib>
+
+1323292592 /home/pauek/UPC/Assignatures/EDOO/Problemes/Generals/PintaComandes/Imatge.h
+	<vector>
+	<string>
+
+1323293270 source:/home/pauek/UPC/Assignatures/EDOO/Problemes/Generals/PintaComandes/Pinzell.cpp
+	"Pinzell.h"
+	"Imatge.h"
+
+1323293364 /home/pauek/UPC/Assignatures/EDOO/Problemes/Generals/PintaComandes/Pinzell.h
+	"Imatge.h"
+
+1323293460 source:/home/pauek/UPC/Assignatures/EDOO/Problemes/Generals/PintaComandes/main.cpp
+	<iostream>
+	"Imatge.h"
+	"Pinzell.h"
+
